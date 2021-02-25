@@ -80,3 +80,8 @@ test2 = testgogo2
 ```sh
 service svnserve start
 ```
+
+## 7. 재부팅시 자동시작 설정
+```sh
+chkconfig svnserve on
+```
