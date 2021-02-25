@@ -47,3 +47,28 @@ realm = My_First_Repository
 #인증 접근의 권한 설정 파일 위치
 authz-db = authz
 ```
+
+## 4. /etc/sysconfig/svnserve 생성
+이 파일을 생성해주어야 service svnserve start/stop이 가능하다.
+
+```sh
+vi /etc/sysconfig/svnserve
+```
+```sh
+# OPTIONS is used to pass command-line arguments to svnserve.
+#
+# Specify the repository location in -r parameter:
+OPTIONS="--threads --root /svn/repos"
+```
+
+## 5. 계정 생성
+svn는 OS계정이 아니라 자체 계정을 사용한다.
+```sh
+cd /svn/repos/conf/
+vi passwd
+```
+```sh
+[users]
+test1 = testgogo1
+test2 = testgogo2
+```
