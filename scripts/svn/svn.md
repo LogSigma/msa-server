@@ -72,3 +72,11 @@ vi passwd
 test1 = testgogo1
 test2 = testgogo2
 ```
+
+## 6. 서비스 시작
+-  기본 포트는  3690
+-  다른 포트로 변경하려면 /etc/sysconfig/svnserve를 수정
+-  접속 URL = svn://서버IP/경로 이다.
+```sh
+service svnserve start
+```
