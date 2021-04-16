@@ -1,6 +1,6 @@
 # Node
 
-## 1. Node.js LTS (14.x)
+**Node.js LTS (14.x)**
 ```sh
 # As root
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
