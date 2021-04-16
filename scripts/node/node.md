@@ -9,7 +9,7 @@ curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | sudo bash -
 ```
 
-에러 발생 시 **/etc/yum.repos.d/**
+SSL 에러 발생 시 `/etc/yum.repos.d/`에서 `sss=0` 추가할 것 
 
 
 ```sh
