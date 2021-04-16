@@ -9,10 +9,13 @@ curl -fsSL https://rpm.nodesource.com/setup_lts.x | bash -
 curl -fsSL https://rpm.nodesource.com/setup_lts.x | sudo bash -
 ```
 
+에러 발생 시 **/etc/yum.repos.d/**
+
+
 ```sh
-[nginx]
-name=nginx repo
-baseurl=http://nginx.org/packages/centos/7/$basearch/
-gpgcheck=0
-enabled=1
+sudo yum clean all && sudo yum makecache fast
+
+sudo yum install -y gcc-c++ make
+
+sudo yum install -y nodejs
 ```
