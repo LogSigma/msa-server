@@ -51,6 +51,7 @@ sudo service jenkins start
 sudo service jenkins restart
 ```
 
+Centos7 재시작 시에 항상 Jenkins를 구동하게 설정
 ```sh
 sudo systemctl enable jenkins
 ```
