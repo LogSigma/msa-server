@@ -1,5 +1,9 @@
 # PostgreSQL
 
+**운영환경**
+* CentOS 7.6
+* PostgreSQL 11.11
+
 **Node.js LTS (14.x)**
 ```sh
 # As root
