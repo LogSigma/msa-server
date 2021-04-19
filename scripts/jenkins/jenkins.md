@@ -42,3 +42,15 @@ gpgkey=https://pkg.jenkins.io/rehat/jenkins.io.key
 ```sh
 sudo yum install jenkins
 ```
+
+### Jenkins 구동
+```sh
+# 시작
+sudo service jenkins start
+# 재시작
+sudo service jenkins restart
+```
+
+```sh
+sudo systemctl enable jenkins
+```
