@@ -1,9 +1,10 @@
 # PostgreSQL
 
-**운영환경**
 
+**운영환경**
 * CentOS 7.6
 * PostgreSQL 11.11
+
 
 **RPM 다운로드**
 
@@ -12,6 +13,7 @@
 * postgresql11-contrib-11.11-1PGDG.rhel7.x86_64.rpm
 * postgresql11-libs-11.11-1PGDG.rhel7.x86_64.rpm
 * postgresql11-server-11.11-1PGDG.rhel7.x86_64.rpm
+
 
 **설치**
 
