@@ -1,6 +1,6 @@
 # PostgreSQL
 
-**운영환경**
+### 운영환경
 * CentOS 7.6
 * PostgreSQL 11.11
 
@@ -20,4 +20,10 @@ sudo rpm -ivh postgresql11-server-11.11-1PGDG.rhel7.x86_64.rpm
 sudo rpm -ivh postgresql11-contrib-11.11-1PGDG.rhel7.x86_64.rpm
 ```
 
-SSL certificate 발생 시 `yum repository` 설정 파일 (`/etc/yum.repos.d/` 디렉토리에 있는 .repo 파일)에 `sslverify=0` 내용을 추가 해주면 됩니다.
+### 설치된 패키지 확인
+```sh
+rpm -qa | grep postgresql
+```
+
+### 기본 Database 생성
+`initdb` 명령어를 통해 기본 데이터베이스를 설치합니다. 기본 데이터베이스는 `postgres` 라는 이름으로 생성됩니다.
