@@ -27,3 +27,17 @@ rpm -qa | grep postgresql
 
 ### 기본 Database 생성
 `initdb` 명령어를 통해 기본 데이터베이스를 설치합니다. 기본 데이터베이스는 `postgres` 라는 이름으로 생성됩니다.
+```sh
+sudo /usr/pgsql-11/bin/postgresql-11-setup initdb
+```
+
+### 서비스 등록 및 실행
+```sh
+sudo systemctl enable postgresql-11
+sudo systemctl start postgresql-11
+```
+
+### postgresql 접속
+```sh
+sudo -u postgres psql
+```
