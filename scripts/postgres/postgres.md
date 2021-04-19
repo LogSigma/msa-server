@@ -46,4 +46,18 @@ sudo -u postgres psql
 ```sql
 postgres=# create user test1;
 CREATE ROLE
+postgres=# \du;
+```
+
+### DB 계정 Role 권한 추가
+```sql
+postgres=# alter role test1 superuser createdb;
+ALTER ROLE
+postgres=# \du;
+```
+
+### DB 계정 Password 추가
+```sql
+postgres=# alter user test1 with password 'test1';
+ALTER ROLE
 ```
