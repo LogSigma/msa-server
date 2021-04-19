@@ -21,7 +21,21 @@ sudo vi /etc/yum.repos.d/jenkins.repo
 ```
 **jenkins.repo 내용**
 ```sh
+[jenkins-stable]
+name=Jenkins-stable
+baseurl=https://pkg.jenkins.io/redhat-stable
+gpgcheck=1
+sslverify=0
+repo_gqgcheck=0
+gpgkey=https://pkg.jenkins.io/rehat-stable/jenkins.io.key
 
+[jenkins]
+name=Jenkins
+baseurl=https://pkg.jenkins.io/redhat
+gpgcheck=1
+sslverify=0
+repo_gqgcheck=0
+gpgkey=https://pkg.jenkins.io/rehat/jenkins.io.key
 ```
 
 ### 설치
