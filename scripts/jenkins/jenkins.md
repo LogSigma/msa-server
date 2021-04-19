@@ -26,16 +26,16 @@ name=Jenkins-stable
 baseurl=https://pkg.jenkins.io/redhat-stable
 gpgcheck=1
 sslverify=0
-repo_gqgcheck=0
-gpgkey=https://pkg.jenkins.io/rehat-stable/jenkins.io.key
+repo_gpgcheck=0
+gpgkey=https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 [jenkins]
 name=Jenkins
 baseurl=https://pkg.jenkins.io/redhat
 gpgcheck=1
 sslverify=0
-repo_gqgcheck=0
-gpgkey=https://pkg.jenkins.io/rehat/jenkins.io.key
+repo_gpgcheck=0
+gpgkey=https://pkg.jenkins.io/redhat/jenkins.io.key
 ```
 
 ### 설치
