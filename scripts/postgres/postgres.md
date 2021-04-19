@@ -41,3 +41,9 @@ sudo systemctl start postgresql-11
 ```sh
 sudo -u postgres psql
 ```
+
+### DB 계정 추가
+```sql
+postgres=# create user test1;
+CREATE ROLE
+```
